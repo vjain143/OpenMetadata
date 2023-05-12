@@ -675,6 +675,11 @@
     <pluginManagement>
       <plugins>
         <plugin>
+          <groupId>ca.vanzyl.provisio.maven.plugins</groupId>
+          <artifactId>provisio-maven-plugin</artifactId>
+          <version>1.0.18</version>
+        </plugin>
+        <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-enforcer-plugin</artifactId>
           <version>3.1.0</version>
@@ -840,6 +845,11 @@
     </pluginManagement>
 
     <plugins>
+      <plugin>
+        <groupId>ca.vanzyl.provisio.maven.plugins</groupId>
+        <artifactId>provisio-maven-plugin</artifactId>
+        <extensions>true</extensions>
+      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
