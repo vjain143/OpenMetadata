@@ -1,0 +1,14 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  creationTimestamp: null
+  name: docker-compose-quickstart-app-net
+spec:
+  ingress:
+    - from:
+        - podSelector:
+            matchLabels:
+              io.kompose.network/docker-compose-quickstart-app-net: "true"
+  podSelector:
+    matchLabels:
+      io.kompose.network/docker-compose-quickstart-app-net: "true"

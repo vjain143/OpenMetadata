@@ -42,6 +42,11 @@ ansi-styles@^3.2.1:
   dependencies:
     color-convert "^1.9.0"
 
+antlr4@^4.12.0:
+  version "4.12.0"
+  resolved "https://registry.yarnpkg.com/antlr4/-/antlr4-4.12.0.tgz#e2323fbb057c77068a174914b0533398aeaba56a"
+  integrity sha512-23iB5IzXJZRZeK9TigzUyrNc9pSmNqAerJRBcNq1ETrmttMWRgaYZzC561IgEO3ygKsDJTYDTozABXa4b/fTQQ==
+
 array-back@^1.0.3, array-back@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/array-back/-/array-back-1.0.4.tgz#644ba7f095f7ffcf7c43b5f0dc39d3c1f03c063b"
