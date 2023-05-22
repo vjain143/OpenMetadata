@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   annotations:
-    kompose.cmd: kompose convert -f docker-compose-openmetadata.yml
+    kompose.cmd: kompose convert -f docker-compose.yml
     kompose.version: 1.28.0 (c4137012e)
   creationTimestamp: null
   labels:
@@ -13,16 +13,28 @@ spec:
   ports:
     - name: "8585"
       port: 8585
+      nodePort: 30585
       targetPort: 8585
+      protocol: TCP
     - name: "8586"
       port: 8586
+      nodePort: 30586
       targetPort: 8586
-    #- name: "8585-tcp"
+      protocol: TCP
+    - name: "5005"
+      port: 5005
+      nodePort: 30005
+      targetPort: 5005
+      protocol: TCP
+    #- name: 8585-tcp
     #  port: 8585
-    #  targetPort: 8585
-    #- name: "8586-tcp"
+    # targetPort: 8585
+    #- name: 8586-tcp
     #  port: 8586
     #  targetPort: 8586
+    #- name: 5005-tcp
+    #  port: 5005
+    #  targetPort: 5005
   selector:
     io.kompose.service: openmetadata-server
 status:
